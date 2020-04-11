@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        `${body.current.weather_descriptions}, It is currently ${body.current.temperature} degress out. There is a ${body.current.feelslike}% chance of rain`
+        `${body.current.weather_descriptions}, It is currently temperature ${body.current.temperature} degress out. Humidity is ${body.current.humidity}, There is a ${body.current.feelslike}% chance of rain. Wind speed is ${body.current.wind_speed} and  Wind degree ${body.current.wind_degree}`
       );
     }
   });
